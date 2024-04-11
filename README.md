@@ -52,7 +52,27 @@ Please note that we have a Code of Conduct in place to ensure a positive and inc
 
 Feel free to customize this README according to your specific requirements or preferences! If you're a beginner looking to learn and contribute, you're in the right place! 🌟
 
-## Connect with me <img src="https://github.com/GangadharYande/Profile-Assets/blob/main/Handshake.gif" height="32px">
+
+## Contributors 😊
+
+Thanks goes to these wonderful people ([:hugs:](https://allcontributors.org/docs/en/emoji-key)):
+
+<table>
+    <tbody>
+        <tr>
+            <td align="center">
+                    <a href="https://github.com/GangadharYande">
+                        <img src="https://avatars.githubusercontent.com/u/36783781?s=96&v=4" width="100px;"alt="Gangadhar Yande" />
+                        <br/>
+                        <sub><b>Gangadhar Yande</b></sub>
+                    </a>
+                </td>
+         </tr>
+   </tbody>
+</table>   
+ 
+
+## Connect with me for Suggestions to improve the Repo! <img src="https://github.com/GangadharYande/Profile-Assets/blob/main/Handshake.gif" height="32px">
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
