@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Demo {
     public static void main(String args[]) {
-
+        // Sorting on basis of last digit  in accending order 
         Comparator<Integer> com = new Comparator<Integer>(){
             public int compare(Integer i,Integer j){
-                if(i%10 > j%10) return 1;
-                else  return -1;
+                if(i%10 > j%10) return 1;  // returns true (1) .
+                else  return -1;           // returns false (-1)
             }
         };
 
