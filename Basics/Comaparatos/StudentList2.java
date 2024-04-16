@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
-// Define the Student class
-class Student {
+// Define the Student class implementing Comparable interface for natural ordering
+
+class Student implements Comparable<Student> { 
     int age; // Age of the student
     String name; // Name of the student
 
@@ -18,24 +18,22 @@ class Student {
     public String toString() {
         return "Student [age=" + age + ", name=" + name + "]";
     }
+
+    // Implement compareTo method to compare students based on age
+    public int compareTo(Student that) {
+        if (this.age > that.age)
+            return 1; // Return 1 if this student's age is greater
+        else if (this.age < that.age)
+            return -1; // Return -1 if this student's age is less
+        else
+            return 0; // Return 0 if ages are equal
+    }
 }
 
-public class StudentList {
-
+public class StudentList2 {
     public static void main(String args[]) {
+        List<Student> studs = new ArrayList<>(); // Create a list to store Student objects
 
-        // Comparator to sort students by age  (Using Third person to campare first and second person)
-        Comparator<Student> byAge = new Comparator<Student>(){
-            public int compare(Student i, Student j){
-                // Compare ages of two students
-                if(i.age > j.age) return 1; // If age of i is greater than age of j, return 1
-                else return -1; // Otherwise, return -1
-            }
-        };
-
-        // Create a list to store Student objects
-        List<Student> studs = new ArrayList<>();
-        
         // Add Student objects to the list
         studs.add(new Student(18, "Jansi"));
         studs.add(new Student(22, "Megha"));
@@ -44,15 +42,17 @@ public class StudentList {
         studs.add(new Student(21, "Ankush"));
 
         // Print the list of students before sorting
+        System.out.println("List of students before sorting:");
         for (Student s : studs) {
             System.out.println(s);
         }
         System.out.println();
 
-        // Sort the list of students using the byAge comparator
-        Collections.sort(studs, byAge);
-        
+        // Sort the list of students using a lambda expression to specify the comparator
+        Collections.sort(studs, (s1, s2) -> s1.compareTo(s2));
+
         // Print the list of students after sorting
+        System.out.println("List of students after sorting by age:");
         for (Student s : studs) {
             System.out.println(s);
         }
