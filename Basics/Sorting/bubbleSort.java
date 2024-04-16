@@ -1,4 +1,4 @@
-package Basics.Sorting;
+
 
 public class bubbleSort {
 
@@ -31,7 +31,7 @@ public class bubbleSort {
     }
 
     public static void main(String[] args) {
-        int A[] = {2, 8, 6, 3, 4};
+        int A[] = {5,0,1,3,4,9,6,7,2,8};
         
         // Call BubbleSort method to sort the array
         BubbleSort(A);
