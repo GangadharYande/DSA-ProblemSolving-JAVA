@@ -85,7 +85,7 @@ public class BfsTraversalOnGraphs {
            */
 
         /* 
-           For Example if graph has subarray components as below 
+           For Example, if the graph has subarray components as below 
 
               0----1----2----3
 
@@ -93,8 +93,9 @@ public class BfsTraversalOnGraphs {
 
             This is also called Graphs
 
-            for this type  of we need to create the visited array in main function itself as below , this code will 
-            work for both type  type of above graph
+            for this type  we need to create the visited array in the main function itself as below, this code will 
+            work for both types of the above graph.
+           
          */
 
         boolean visited[] = new boolean[vertex];
