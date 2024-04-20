@@ -40,6 +40,7 @@ public class AdjacencyListGraphWeighted {
     // Main method to test the adjacency list representation
     public static void main(String args[]) {
         int vertex = 4;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge> graph[] = new ArrayList[vertex];
         
         // Create the graph

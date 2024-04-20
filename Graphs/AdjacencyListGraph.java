@@ -41,6 +41,7 @@ public class AdjacencyListGraph {
     public static void main(String args[]) {
         int vertex = 4;
 
+        @SuppressWarnings("unchecked")
         ArrayList<Edge> graphs[] = new ArrayList[vertex];
 
         // Create the graph
