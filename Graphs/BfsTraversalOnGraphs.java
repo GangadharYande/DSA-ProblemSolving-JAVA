@@ -69,6 +69,7 @@ public class BfsTraversalOnGraphs {
 
     public static void main(String args[]) {
         int vertex = 7; // Total number of vertices in the graph
+        @SuppressWarnings("unchecked")
         ArrayList<Edge> graph[] = new ArrayList[vertex]; // Array of ArrayLists to represent the graph
 
         createGraph(graph);
@@ -85,7 +86,7 @@ public class BfsTraversalOnGraphs {
            */
 
         /* 
-           For Example, if the graph has subarray components as below 
+           If the graph has subarray components as below 
 
               0----1----2----3
 
