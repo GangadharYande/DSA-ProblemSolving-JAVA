@@ -45,18 +45,18 @@ public class BfsTraversalOnGraphs {
     }
 
     // Function to perform Breadth First Search (BFS) traversal on the graph
-    public static void bfs(ArrayList<Edge>[] graph, int v) {
+    public static void bfs(ArrayList<Edge>[] graph,int vertex, boolean visited[], int start) {
         Queue<Integer> q = new LinkedList<>(); // Queue to store vertices for BFS traversal
-        boolean vis[] = new boolean[v]; // Array to mark visited vertices
-        q.add(0); // Start BFS from vertex 0
+       
+        q.add(start); // Start BFS from vertex 0
 
         while (!q.isEmpty()) {
             int curr = q.remove(); // Dequeue current vertex
 
             // Check if the current vertex is not visited
-            if (!vis[curr]) {
+            if (!visited[curr]) {
                 System.out.print(curr + " "); // Print the current vertex
-                vis[curr] = true; // Mark current vertex as visited
+                visited[curr] = true; // Mark current vertex as visited
                 
                 // Add all adjacent vertices of the current vertex to the queue
                 for (int i = 0; i < graph[curr].size(); i++) {
@@ -71,6 +71,8 @@ public class BfsTraversalOnGraphs {
         int vertex = 7; // Total number of vertices in the graph
         ArrayList<Edge> graph[] = new ArrayList[vertex]; // Array of ArrayLists to represent the graph
 
+        createGraph(graph);
+
         /*
           Graph representation:
          
@@ -82,7 +84,24 @@ public class BfsTraversalOnGraphs {
          
            */
 
-        createGraph(graph); // Initialize the graph
-        bfs(graph, vertex); // Perform BFS traversal starting from vertex 0
+        /* 
+           For Example if graph has subarray components as below 
+
+              0----1----2----3
+
+                4---5
+
+            This is also called Graphs
+
+            for this type  of we need to create the visited array in main function itself as below , this code will 
+            work for both type  type of above graph
+         */
+
+        boolean visited[] = new boolean[vertex];
+        for( int i =0;i<vertex;i++){
+            if(visited[i]==false){
+                bfs(graph,vertex,visited,i);
+            }
+        }
     }
 }
