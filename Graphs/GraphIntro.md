@@ -60,6 +60,13 @@ In this matrix:
 - Vertex 2 is connected to vertices 0, 1, and 3.
 - Vertex 3 is connected to vertices 1 and 2.
 
+### Bidirectional/Undirectional Graph Structural Implementation
+
+The Structural Implementation is the same as for Bidirectional/Undirectional Weighted Graph  but weight  associated with the edge  as shown below 
+
+![graph](https://github.com/GangadharYande/DSA-ProblemSolving-JAVA/assets/36783781/aba968ba-e61a-4170-9371-5157a6394f00)
+
+
 Graph Visualization
 
 These notes provide a brief overview of the basic concepts related to graphs, including vertices, directionality, edge weights, and storage methods.
