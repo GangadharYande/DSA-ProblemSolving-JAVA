@@ -9,7 +9,7 @@ n = 3
 Output: 
 2 
 Explanation: Take the cube of the original matrix 
-i.e a3 and the (a10)th element is 2.
+i.e a3 and the (a10)th element is 2..
 Example 2:
 
 Input: 
